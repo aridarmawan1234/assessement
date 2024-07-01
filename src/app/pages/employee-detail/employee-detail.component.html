@@ -1,0 +1,91 @@
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title">EMPLOYEE DETAIL</h3>
+
+                    <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputName">
+                                    <b>FirstName</b> 
+                                </label>
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Input FirstName ..." 
+                                    [(ngModel)]="jsonEmployee.firstName" disabled>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputName">
+                                    <b>LastName</b> 
+                                </label>
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Input LastName ..." 
+                                    [(ngModel)]="jsonEmployee.lastName" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputName">
+                                    <b>Basic Salary</b> 
+                                </label>
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Input Basic Salary ..." 
+                                    [(ngModel)]="jsonEmployee.basicSalary" disabled>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputName">
+                                    <b>Description</b> 
+                                </label>
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Input  Description ..." 
+                                    [(ngModel)]="jsonEmployee.description" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputName">
+                                    <b>Email</b>
+                                </label>
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Input Email ..." 
+                                    [(ngModel)]="jsonEmployee.email" disabled>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputName">
+                                    <b>Status</b>
+                                </label>
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Input Status ..." 
+                                    [(ngModel)]="jsonEmployee.status" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputName">
+                                    <b>Group</b>
+                                </label>
+                                <input type="text" id="inputName" class="form-control form-control-sm" placeholder="Input Group ..." 
+                                    [(ngModel)]="jsonEmployee.group" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

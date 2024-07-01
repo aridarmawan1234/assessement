@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-sm-12">
+        <button class="btn btn-primary btn-lg add-employee" routerLink="/page/add-employee">
+            <i class="bi bi-plus"></i> 
+            Add Employee
+      </button>
+    </div>
+</div>
+
+<nz-table #basicTable [nzData]="listOfData" [nzLoading]="isLoading">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Birth Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data; let i = index;">
+        <td>{{ data.no }}.</td>
+        <td>{{ data.firstName }} {{ data.lastName }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.status }}</td>
+        <td>{{ data.birthDate | date: 'dd MMM YYYY' }}</td>
+        <td>
+            <button type="button" class="btn btn-outline-primary" routerLink="/page/employee-detail/{{data.firstName}}">
+                <i class="bi bi-ticket-detailed"></i>
+                Detail
+            </button>
+            |
+            <button type="button" class="btn btn-outline-warning">
+                <i class="bi bi-pencil-square"></i>
+                Edit
+            </button>
+            |
+            <button type="button" class="btn btn-outline-danger" nz-popconfirm nzPopconfirmTitle="Are you sure delete this task?" nzPopconfirmPlacement="top">
+                <i class="bi bi-trash"></i>
+                Delete
+            </button>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
